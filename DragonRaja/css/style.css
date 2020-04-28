@@ -1,0 +1,249 @@
+
+@import './animations.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body{
+	/*background: radial-gradient(ellipse at top, #405b79 30%, #1a2430);
+  /*background: url("../references/BladeMasterTree.jpg") no-repeat fixed center;*/
+	min-height: 100vh;
+	min-width: 100vw;
+	overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+/*------------
+Notice
+-------------*/
+.notice {
+  background: rgba(0,0,0,.7);
+  height: 275px;
+  width: 300px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  position: absolute;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.notice a {color: #fff;}
+
+/*-----
+bootup
+----*/
+.bootup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color:#111;
+  font-family: 'Orbitron', courier, sans-serif;
+  z-index: 3;
+}
+
+.bootup p {
+  background-color:#111;
+  font-family: 'Orbitron', courier, sans-serif;
+  font-size: 5em;
+}
+
+.bootup nav ul {
+  font-size:4em;
+  text-decoration:none;
+  color:rgba(255,255,255,.3);
+}
+
+.bootup nav ul li {
+  display: inline-block;
+  width: 100%;
+  cursor: help;
+}
+
+.cq {
+  text-align:center;
+  color:rgba(255,255,255,.3);
+  text-shadow: 0 0 1px rgba(157,208,154,.3); // Fallback for nonCSS3?
+  /* Stripes */
+  /*Fallback:
+http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
+*/
+  background: -webkit-linear-gradient(transparent, transparent),               url(https://i.imgur.com/WyMyxQ6.png) repeat;
+  /* clipping webkit magic */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Animation */
+  -webkit-animation: glow 3s infinite alternate;
+     -moz-animation: glow 3s infinite alternate;
+          animation: glow 3s infinite alternate;
+  -webkit-animation-timing-function: cubic-bezier(1,.3,.79,.81);
+     -moz-animation-timing-function: cubic-bezier(1,.3,.79,.81);
+          animation-timing-function: cubic-bezier(1,.3,.79,.81);
+}
+
+.sorryw {
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: #111;
+  position:absolute;
+  z-index: 9;
+  margin: 0;
+  padding: 0;
+}
+.sorry {
+  top: 50%;
+  font-size: 5em;
+  text-align: center;
+  width: 100%;
+  font-family: 'Orbitron', courier, sans-serif;
+  color: #fff;
+}
+/*------
+mainwrap
+-----*/
+.mainwrap {
+	background: radial-gradient(ellipse at top, #405b79 30%, #1a2430);
+  /*background: url("../references/BladeMasterTree.jpg") no-repeat fixed center;*/
+	min-height: 100vh;
+	min-width: 100vw;
+	overflow: hidden;
+  position: fixed;
+}
+
+.wrapper {
+	position: absolute;
+	width: 750px;
+	height: 750px;
+	left: 26.5%;
+	top: 8%;
+  animation: fadeinonload .8s ease-in-out;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+  background: radial-gradient(#59a9ce, #2d5674);
+	border-radius: 100%;
+	position: absolute;
+}
+.typeshowcase {
+  position: absolute;
+  width: 52%;
+  height: 52%;
+  background: radial-gradient(#43a6c5, #305f7d);
+  border-radius: 100%;
+  top: 22%;
+  left: 25%;
+  margin-top: 10px;
+}
+
+#BM {
+  margin-left: -50px;
+  margin-top: -50px;
+}
+/*------------
+Icon Divs
+-------------*/
+.top, .bot {
+	width: 15.5%;
+	height: 15.5%;
+	background: #000;
+	position: relative;
+	border-radius: 100%;
+	float: left;
+}
+.bot {top: 50%;}
+#t1 {
+	top: 70px;
+	left: 155px;
+  background: url('../references/FightingSpirit.png');
+}
+
+#t2 {
+	top: 20px;
+	left: 173px;
+  background: url('../references/DemonRage.png');
+}
+
+#t3 {
+	top: 45px;
+	left: 198px;
+  background: url('../references/moonshatterer.png');
+}
+
+#t4 {
+	top: 138px;
+	left: 195px;
+  background: url('../references/AzureMoon.png');
+}
+
+#t5 {
+	top: 273px;
+  left: 131px;
+  background: url('../references/RoundHouseKill.png');
+}
+
+#dud {opacity: 0;}
+
+#b1 {
+  margin-top: -137px;
+  left: 44px;
+}
+
+#b2 {
+  margin-top: -5px;
+  left: 103px;
+}
+
+#b3 {
+  margin-top: 87px;
+  left: 97px;
+}
+
+#b4 {
+  margin-top: 110px;
+  left: 119px;
+}
+
+#b5 {
+  margin-top: 63px;
+  left: 137px;
+}
+
+/*------------
+Nav
+-------------*/
+#nav {
+  position: absolute;
+  height: 110vh;
+  width: 125px;
+  right: 0;
+  color: #8698ac;
+  background: #1a2430;
+  opacity: 1;
+  margin-top: -10px;
+}
+
+#nav ul {
+	text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+#nav li {
+	display: block;
+	padding: 50px 5px;
+  margin-left: -40px;
+  width: 140%;
+  border-bottom: 1px solid #38424c;
+}
+
+#n1 {
+  background: #3477a1;
+  color: #fff;
+}

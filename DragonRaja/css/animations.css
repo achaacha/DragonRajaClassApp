@@ -1,0 +1,92 @@
+/*-------------------------------------------------------------
+|                    My very personal                         |
+|                    Animations Library                       |
+|                     Keyframes only                          |
+|                        Don't @ me.                          |
+--------------------------------------------------------------*/
+
+/*----------------------------
+|        style.css            |
+-----------------------------*/
+
+@keyframes fadeinonload {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 1px rgba(255,255,255,.1),
+                 0 0 3px rgba(255,255,255,.1),
+                 0 0 5px rgba(157,208,154,.3);
+  }
+  50% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1);
+  }
+  52% {
+    text-shadow: 0 0 5px rgba(157,208,154,.3);
+  }
+  54% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1),
+                 0 0 10px rgba(157,208,154,.3);
+  }
+}
+
+
+@-webkit-keyframes glow {
+  0% {
+    text-shadow: 0 0 1px rgba(255,255,255,.1),
+                 0 0 3px rgba(255,255,255,.1),
+                 0 0 5px rgba(157,208,154,.3);
+  }
+  50% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1);
+  }
+  52% {
+    text-shadow: 0 0 5px rgba(157,208,154,.3);
+  }
+  54% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1),
+                 0 0 10px rgba(157,208,154,.3);
+  }
+}
+
+@-moz-keyframes glow {
+  0% {
+    text-shadow: 0 0 1px rgba(255,255,255,.1),
+                 0 0 3px rgba(255,255,255,.1),
+                 0 0 5px rgba(157,208,154,.3);
+  }
+  50% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1);
+  }
+  52% {
+    text-shadow: 0 0 5px rgba(157,208,154,.3);
+  }
+  54% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255,255,255,.1),
+                 0 0 5px rgba(255,255,255,.1),
+                 0 0 10px rgba(157,208,154,.3);
+  }
+}
